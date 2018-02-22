@@ -23,7 +23,7 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    color: #18a500;
+    color: #00008B;
     font-family: times new roman;
     padding: 25px;
 }
@@ -39,7 +39,7 @@ body {
 .container3 {
     max-width: 800px;
     margin: 0 auto;
-    color: #18a500;
+    color: #FF4500;
     font-family: times new roman;
     padding: 25px;
 }
