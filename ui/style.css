@@ -27,3 +27,19 @@ body {
     font-family: times new roman;
     padding: 25px;
 }
+
+.container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #18a500;
+    font-family: times new roman;
+    padding: 25px;
+}
+
+.container3 {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #18a500;
+    font-family: times new roman;
+    padding: 25px;
+}
