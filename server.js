@@ -20,7 +20,7 @@ var articles = {
             <p>
                 This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
             </p>`
-},
+    },
     'article-two': {
     title: 'Article Two | H.Karthi',
     heading: 'Article Two',
@@ -35,7 +35,7 @@ var articles = {
             <p>
                 This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. 
             </p>`
-},
+    },
     'article-three': {
     title: 'Article Three | H.Karthi',
     heading: 'Article Three',
@@ -50,7 +50,7 @@ var articles = {
             <p>
                 This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. 
             </p>`
-},
+    },
 };
 function createTemplate(data){
     var title = data.title;
@@ -94,7 +94,6 @@ app.get('/', function (req, res) {
 //articleName == article-one
 //articles[articleName] == {} content object for article-one
 
-articleName = req.params.articleName;
 app.get('/:articleName', function (req, res) {
   res.send(createTemplate(articles[articleName]));
 });
