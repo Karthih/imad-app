@@ -1,7 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+    margin: 100px;
 }
 
 .center {
@@ -30,16 +29,12 @@ body {
 
 .container2 {
     max-width: 800px;
-    margin: 0 auto;
     color: #18a500;
     font-family: times new roman;
-    padding: 25px;
 }
 
 .container3 {
     max-width: 800px;
-    margin: 0 auto;
     color: #FF4500;
     font-family: times new roman;
-    padding: 25px;
 }
