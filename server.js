@@ -10,6 +10,7 @@ var articles = {
     title: 'Article One | H.Karthi',
     heading: 'Article One',
     date: 'Feb 21, 2018',
+    container: 'container',
     content: 
     `<p>
                 This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
@@ -25,6 +26,7 @@ var articles = {
     title: 'Article Two | H.Karthi',
     heading: 'Article Two',
     date: 'Feb 22, 2018',
+    container: 'container2',
     content: 
     `<p>
                 This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. 
@@ -40,6 +42,7 @@ var articles = {
     title: 'Article Three | H.Karthi',
     heading: 'Article Three',
     date: 'Feb 23, 2018',
+    container: 'container3',
     content: 
     `<p>
                 This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. This is the content for my third article. 
@@ -57,6 +60,7 @@ function createTemplate(data){
     var heading = data.heading;
     var date = data.date;
     var content = data.content;
+    var container = data.container;
 
 var HTMLTemplate = 
 `
@@ -69,7 +73,7 @@ var HTMLTemplate =
         <meta name = "viewport" content = "width=device-width,initial-scale=1"/>
     </head>
     <body>
-        <div class = "container">
+        <div class = "$container">
             <div>
                 <a href='/'>Home</a>
             </div>
