@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = { 
-ArticleOne: {
+    'article-one': {
     title: 'Article One | H.Karthi',
     heading: 'Article One',
     date: 'Feb 21, 2018',
@@ -21,7 +21,7 @@ ArticleOne: {
                 This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
             </p>`
 },
-ArticleTwo: {
+    'article-two': {
     title: 'Article Two | H.Karthi',
     heading: 'Article Two',
     date: 'Feb 22, 2018',
@@ -36,7 +36,7 @@ ArticleTwo: {
                 This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. This is the content for my second article. 
             </p>`
 },
-ArticleThree: {
+    'article-three': {
     title: 'Article Three | H.Karthi',
     heading: 'Article Three',
     date: 'Feb 23, 2018',
@@ -91,16 +91,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req, res) {
-  res.send(createTemplate(ArticleOne));
-});
+//articleName == article-one
+//articles[articleName] == {} content object for article-one
 
-app.get('/article-two', function (req, res) {
-  res.send(createTemplate(ArticleTwo));
-});
-
-app.get('/article-three', function (req, res) {
-  res.send(createTemplate(ArticleTwo));
+app.get('/:articleName', function (req, res) {
+  res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
