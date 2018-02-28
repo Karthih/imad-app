@@ -23,3 +23,6 @@ function move () {
     mL = mL+10;
     img.style.mL = mL + 'px';
 }
+img.onclick = function () {
+    var interval = setInterval(move, 10000);
+};
