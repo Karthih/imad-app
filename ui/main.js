@@ -1,10 +1,5 @@
 console.log('Loaded!');
 
-var element = document.getElementById('main-text');
-
-element.innerHTML = `Hi! I am H. Karthi, the totally cool person.`; "br";
-`I just created a new app! Yesss!`;
-
 var img = img.getElementById('madi');
 
 var mL = 0;
