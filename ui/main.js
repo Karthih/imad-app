@@ -23,6 +23,6 @@ function moveRight () {
     mL = mL + 10;
     img.style.mL = mL + 'px';
 }
-madi.onclick = function () {
+img.onclick = function () {
     var interval = setInterval(moveRight, 10);
 };
