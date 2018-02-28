@@ -1,6 +1,6 @@
 console.log('Loaded!');
 
-var img = img.getElementById('madi');
+var img = document.getElementById('madi');
 
 var mL = 0;
 var mR = 0;
