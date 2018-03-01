@@ -21,8 +21,8 @@ function move () {
 }
 function moveRight () {
     mL = mL + 10;
-    madi.style.mL = mL + 'px';
+    img.style.mL = mL + 'px';
 }
-madi.onclick = function () {
-    var interval = setInterval(moveRight, 10);
+img.onclick = function () {
+    var interval = setInterval(moveRight, 100);
 };
