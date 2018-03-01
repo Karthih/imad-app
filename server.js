@@ -98,11 +98,11 @@ app.get('/', function (req, res) {
 
 var counter = 0;
 app.get('/counter', function (req, res) {
+    counter = counter + 1;
+    res.send(counter.toString());
     res.send(`<html>
               <a href = "http://umah15.imad.hasura-app.io/">Home</a>
               </html>`);
-              counter = counter + 1;
-    res.send(counter.toString());
 });
 
 //articleName == article-one
