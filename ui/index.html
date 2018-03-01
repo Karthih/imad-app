@@ -47,5 +47,14 @@
         <center><h3><font face = "Vladimir Script"><a href="article-one">Article One</a></font></h3></center>
         <center><h3><font face = "Vladimir Script"><a href="article-two">Article Two</a></font></h3></center>
         <center><h3><font face = "Vladimir Script"><a href="article-three">Article Three</a></font></h3></center>
+        <br>
+        <script>
+            var counter = 0;
+            app.get('/', function (req,res) {
+                counter = counter + 1;
+                res.send(counter,toString());
+            });
+            
+        </script>
     </body>
 </html>
