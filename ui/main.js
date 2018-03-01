@@ -10,13 +10,13 @@ var marginTop = 0;
 function move () {
     marginLeft = marginLeft + 10;
     img.style.marginLeft = marginLeft + 'px';
-    marginBottom = marginBottom + 100;
+    marginBottom = marginBottom + 10;
     img.style.marginBottom = mB + 'px';
-    marginRight = marginRight + 200;
+    marginRight = marginRight + 20;
     img.style.marginRight = marginRight + 'px';
-    marginTop = marginTop + 100;
+    marginTop = marginTop + 10;
     img.style.marginTop = marginTop + 'px';
-    marginLeft = marginLeft + 100;
+    marginLeft = marginLeft + 10;
     img.style.marginLeft = marginLeft + 'px';
 }
 function moveRight () {
@@ -24,5 +24,5 @@ function moveRight () {
     img.style.marginLeft = marginLeft + 'px';
 }
 img.onclick = function () {
-    var interval = setInterval(move, 1000);
+    var interval = setInterval(move, 100);
 };
