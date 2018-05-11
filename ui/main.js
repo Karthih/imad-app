@@ -26,11 +26,3 @@
 //img.onclick = function () {
     //var interval = setInterval(move, 100);
 //};
-
-var button=document.getElementById('counterr');
-var counter = 0;
-button.onclick = function(){
-    counter = counter+1;
-    var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
-};
