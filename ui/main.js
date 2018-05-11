@@ -27,7 +27,7 @@
     //var interval = setInterval(move, 100);
 //};
 
-var button = document.getElementById('counter');
+var button = document.getElementById('counterr');
 var counter = 0;
 button.onclick = function () {
     counter = counter+1;
